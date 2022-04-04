@@ -46,17 +46,17 @@ function gotResults(error, results){
         document.getElementById("result_gesture_name").innerHTML = results[0].label;
         prediction = results[0].label;
         speak();
-        if(results[0].label == "Victory"){
+        if(results[0].label == "VICTORY"){
             document.getElementById("result_emoji").innerHTML = "&#9996;";
             
         }
-        if(results[0].label == "Amazing"){
+        if(results[0].label == "OK"){
             document.getElementById("result_emoji").innerHTML = "&#128076;";
            
             
         }
-        if(results[0].label == "Best"){
-            document.getElementById("result_emoji").innerHTML = "&#128077";
+        if(results[0].label == "THUMBS UP"){
+            document.getElementById("result_emoji").innerHTML = "&#128077;"
             
             
         }
